@@ -5,7 +5,7 @@ import { getProducts } from "../asyncMock";
 
 
 export const ItemListContainer = () => {
-  const { category } = useParams();
+  const { id } = useParams();
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -13,8 +13,8 @@ export const ItemListContainer = () => {
     setIsLoading(true);
     getProducts()
       .then((resp) => {
-        if (category) {
-          const productsFilter = resp.filter((product) => product.category === category);
+        if (id) {
+          const productsFilter = resp.filter((product) => product.category === id);
 
             if(productsFilter.length > 0) {
               setProducts(productsFilter);
@@ -27,7 +27,7 @@ export const ItemListContainer = () => {
         setIsLoading(false);
       })
       .catch((error) => console.log(error));
-  }, [category]);
+  }, [id]);
 
   return <>{isLoading ? <h2> Cargando productos... </h2> : <ItemList products={products}/>}</>;
 };

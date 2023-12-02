@@ -1,13 +1,13 @@
 const products = [
-        {id: "1" , name: "Batman Año 1", description: "Descripción del producto", img: "", stock: 10, price: "", category: "Comic"},
-        {id: "2" , name: "Batman Red Hood", description: "Descripción del producto", img: "", stock: 8, price: "", category: "Comic"},
-        {id: "3" , name: "The Killing Joke", description: "Descripción del producto", img: "", stock: 3, price: "", category: "Comic"},
-        {id: "4" , name: "Producto A", description: "Descripción del producto", img: "", stock: 7, price: "", category: "Manga"},
-        {id: "5" , name: "Producto A", description: "Descripción del producto", img: "", stock: 10, price: "", category: "Manga"},
-        {id: "6" , name: "Producto A", description: "Descripción del producto", img: "", stock: 0, price: "", category: "Manga"},
-        {id: "7" , name: "Producto A", description: "Descripción del producto", img: "", stock: 4, price: "", category: "VideoJuegos"},
-        {id: "8" , name: "Producto A", description: "Descripción del producto", img: "", stock: 13, price: "", category: "VideoJuegos"},
-        {id: "9" , name: "Producto A", description: "Descripción del producto", img: "", stock: 6, price: "", category: "VideoJuegos"},
+        {id: "1" , name: "Batman Año 1", description: "Comic de Batman. Escrito por Frank Miller. Editorial DC",  stock: "Disponibles: 10"  , price: "$4.000" , category: "Comic"},
+        {id: "2" , name: "Batman Red Hood", description: "Descripción del producto",  stock: "Disponibles: 10" , price: "$4.500" , category: "Comic"},
+        {id: "3" , name: "The Killing Joke", description: "Descripción del producto",  stock: "Disponibles: 10" , price: "$6.000", category: "Comic"},
+        {id: "4" , name: "Steel Ball Run 1", description: "Steel Ball Run. Secuela de Jojo´s. Escrito por Hirohiko Araki",  stock: "Disponibles: 10" , price: "$8.000", category: "Manga"},
+        {id: "5" , name: "Steel Ball Run 2", description: "Steel Ball Run. Secuela de Jojo´s. Escrito por Hirohiko Araki",  stock: "Disponibles: 10" , price: "$8.000", category: "Manga"},
+        {id: "6" , name: "Steel Ball Run 3", description: "Steel Ball Run. Secuela de Jojo´s. Escrito por Hirohiko Araki",  stock: "Disponibles: 10" , price: "$8.000", category: "Manga"},
+        {id: "7" , name: "Digimon Word: Next Order", description: "Juego de Digimon. Reboot de Digimon Word 1. Disponible para Pc y Ps4/Ps5.",  stock: "Disponibles: 10" , price: "$20.000", category: "VideoJuegos"},
+        {id: "8" , name: "BloodBorn", description: "Juego de la franquicia Souls. Exclusivo para Ps4.",  stock: "Disponibles: 10" , price: "$11.500", category: "VideoJuegos"},
+        {id: "9" , name: "The Last Guardian", description: "Juego dentro de la trilogia de Shadow of the Colosus e ICO. Exclusivo para Ps4",  stock: "Disponibles: 10" , price: "$9.000", category: "VideoJuegos"},
 ];
 
 export const getProducts = (() => {

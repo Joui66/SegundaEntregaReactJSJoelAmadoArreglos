@@ -15,9 +15,6 @@ export const Item = ({ name, description, id, price, stock}) => {
                     <Text>
                     <img src={brand} alt=""  width='60px' height='60px'/>
                     </Text>
-                    <Text>{description}</Text>
-                    <Text>{stock}</Text>
-                    <Text>{price}</Text>
                 </CardBody>
                 <CardFooter>
                     <Button>

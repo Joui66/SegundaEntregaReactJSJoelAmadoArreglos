@@ -12,10 +12,10 @@ export const ItemDetailContainer = () => {
         .then(resp => setItem(resp))
         .catch(error => console.log(error));
         
-     }, [])
+     }, [id])
   return (
     <>
-    {item && <ItemDetail {...item} />}
+    {item && <ItemDetail p={item} />}
     </>
   )
 }
