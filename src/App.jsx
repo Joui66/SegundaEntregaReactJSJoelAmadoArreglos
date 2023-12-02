@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from "./Components/Navbar";
-import ItemListContainer from "./Components/ItemListContainer";
-import ItemDetailContainer from "./Components/ItemDetailContainer";
+import { ItemListContainer } from "./Components/ItemListContainer";
+import { ItemDetailContainer } from "./Components/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home"
 import Cart from './Components/Cart';
 
 
-const App = () => {
+export const App = () => {
 
   return (
     <BrowserRouter>
@@ -28,5 +28,3 @@ const App = () => {
     </BrowserRouter>
   )
 }
-
-export default App

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { ItemList } from "./ItemList";
 import { useParams } from 'react-router-dom';
-import { getProducts } from "../AsyncMock";
+import { getProducts } from "../asyncMock";
 
 
-const ItemListContainer = () => {
+export const ItemListContainer = () => {
   const { category } = useParams();
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -31,5 +31,3 @@ const ItemListContainer = () => {
 
   return <>{isLoading ? <h2> Cargando productos... </h2> : <ItemList products={products}/>}</>;
 };
-
-export default ItemListContainer

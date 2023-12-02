@@ -1,9 +1,10 @@
 import React from 'react'
-import { Card, CardHeader, CardBody, CardFooter, Heading, Text, Button } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, Heading, Text, Button, Img } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
+import brand from "../img/BatmanAño1.webp";
 
 
-const Item = ({ name, description, id, category, price }) => {
+export const Item = ({ name, description, id, price, stock}) => {
     return (
         <>
             <Card>
@@ -11,8 +12,11 @@ const Item = ({ name, description, id, category, price }) => {
                     <Heading size='md'>{name}</Heading>
                 </CardHeader>
                 <CardBody>
+                    <Text>
+                    <img src={brand} alt=""  width='60px' height='60px'/>
+                    </Text>
                     <Text>{description}</Text>
-                    <Text>{category}</Text>
+                    <Text>{stock}</Text>
                     <Text>{price}</Text>
                 </CardBody>
                 <CardFooter>
@@ -28,4 +32,3 @@ const Item = ({ name, description, id, category, price }) => {
     )
 }
 
-export default Item

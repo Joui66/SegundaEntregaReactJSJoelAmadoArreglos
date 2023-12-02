@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { Card, CardHeader, CardBody, CardFooter, Heading, Text, Button, Center } from '@chakra-ui/react';
 import ItemCount from './ItemCount';
 
-const ItemDetail = ({ productos }) => {
+export const ItemDetail = ({ productos }) => {
     const { id } = useParams();
 
 
@@ -18,11 +18,11 @@ const ItemDetail = ({ productos }) => {
 
                             <Card>
                                 <CardHeader>
-                                    <Heading size='md'>{p.Titulo}</Heading>
+                                    <Heading size='md'>{p.name}</Heading>
                                 </CardHeader>
                                 <CardBody>
-                                    <Text>{p.Descripción}</Text>
-                                    <Text>{p.Categoria}</Text>
+                                    <Text>{p.description}</Text>
+                                    <Text>{p.category}</Text>
                                 </CardBody>
                                 <CardFooter>
                                     <ItemCount />
@@ -35,5 +35,3 @@ const ItemDetail = ({ productos }) => {
         </div>
     )
 }
-
-export default React.memo(ItemDetail);
